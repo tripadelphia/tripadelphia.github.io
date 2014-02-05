@@ -7,6 +7,16 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.1.0.min.js">
+            var client = new WindowsAzure.MobileServiceClient(
+            "https://tripadelphia.azure-mobile.net/",
+            "HFPSreOnNQobUWVYRialOeYKmccbBH72"
+        );
+
+            var item = { text: "Awesome item" };
+              client.getTable("Item").insert(item);
+    </script>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
